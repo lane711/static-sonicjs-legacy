@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" class=" docs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content>
+<meta name="generator" content="SonicJs">
+<meta name="version" content="0.7.6">
+<link rel="icon" href="../../assets/img/favicon.ico">
+<title>API Backend - Developer Guide | Kevant Technologies</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="icon" href="../../assets/img/favicon.ico">
+<style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Lato,
+            serif;
+        }
+
+        h1 {
+            font-family: Roboto,
+            serif;
+        }
+    </style>
+<link href="../../assets/css/combined-0.7.6.css" rel="stylesheet">
+<script type="cf93b2acbe1e2abf00483647-text/javascript">
+          window.smartlook||(function(d) {
+            var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+            var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+            c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+            })(document);
+            smartlook('init', '27453f61154d21329a82640d24877fb96f5a8eec');
+        </script>
+</head>
+<body>
+<input type="hidden" id="page-id" name="page-id" value="95cf3169-b9fb-445d-88d5-397ab9981bdd">
+<input type="hidden" id="sessionID" value="erSLkhm7bre7bCBRHB5hAYrfiQF1V3h6" />
+<input type="hidden" id="theme" value="bootstrap5" />
+<main>
+<nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+<div class="container-fluid">
+<a class="navbar-brand" href="../../index.html">
+<div style class="mr-md-auto">
+<img src="https://sonicjscom.s3.us-west-1.amazonaws.com/sonicjs-logo.svg" alt width="120px" />
+</div>
+</a>
+<a class="btn btn-outline-light github" href="https://github.com/lane711/sonicjs" target="_blank"><i class="bi bi-github me-2"></i> Github</a>
+<a class="btn btn-outline-light demo" href="https://demo.sonicjs.com" target="_blank"><i class="bi bi-github me-2"></i> Demo</a>
+<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse text-end p-2" id="navbarsExample01">
+<ul class="navbar-nav me-auto mb-2">
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../docs.html">Docs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../nodejs-cms-comparison.html">Compare</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../contact.html">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="under-menu-spacer"></div>
+<style>
+.pb .css-8ecc8c31b06e{undefined}
+
+.pb .overlay-8ecc8c31b06e{undefined}
+</style><section data-id="1f57085f-aa8a-4c7f-bb21-8ecc8c31b06e" data-title="Section 1" class="jumbotron-fluid css-8ecc8c31b06e undefined undefined undefined position-relative"><div class="section-overlay overlay-8ecc8c31b06e undefined"><div class="container"><div class="row"><div class="col-md-3"><div class="module-template" style data-id="1e35bab3-b4bf-4a13-90df-6106d99a034f" data-module="TITLE" data-content-type="title" data-template-region="false" data-template-page="true"><h3 class="text-left mb-5 mt-0">SonicJs Docs
+<a class="anchor" id="sonicjs-docs"></a>
+</>
+</div><div class="module-template" style data-id="347a18dc-ff2e-414a-b145-67aba3b9b575" data-module="MENU-ACCORDION" data-content-type="menu-accordion" data-template-region="false" data-template-page="true">
+<nav id="accordian-menu" class="accordian-menu">
+<a href="../../docs.html" class="bold small text-uppercase mt-3 mb-1 level-1">Overview</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../../docs.html#special-sauce"><span>Special Sauce</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../../docs.html#getting-started"><span>Getting Started</span></a>
+
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#prerequisites"><span>Prerequisites</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#database-support"><span>Database Support</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#local-setup"><span>Local Setup</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#debugging"><span>Debugging</span></a>
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../features.html"><span>Features</span></a>
+
+
+</nav>
+<a href="../demo-videos.html" class="bold small text-uppercase mt-3 mb-1 level-1">Demo Videos</a>
+<a href="../user-guide.html" class="bold small text-uppercase mt-3 mb-1 level-1">User Guide</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide.html#quick-start"><span>Quick Start</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide/modules.html"><span>Modules</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide/themes.html"><span>Themes</span></a>
+
+
+</nav>
+<a href="../developers-guide.html" class="bold small text-uppercase mt-3 mb-1 level-1">Developer Guide</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../developers-guide.html#hooks"><span>Hooks</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../developers-guide/modules.html"><span>Modules</span></a>
+
+<a class="pl-0 nav-item nav-link level-3" href="../developers-guide/modules/listing.html"><span>Listing</span></a>
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="database-connection.html"><span>Datbase</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="data-model.html"><span>Data Model</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="api-backend.html"><span>API - Backend</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="api-front-end-graphql.html"><span>API - Frontend GraphQL</span></a>
+
+
+</nav>
+</nav></div></div><div class="col-md-9"><div class="module" style data-id="49aa5b3e-b2ff-4159-987b-efe1d0abf17e" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h1 class="text-left ">API Backend
+<a class="anchor" id="api-backend"></a>
+</>
+</div><div class="module" style data-id="31b4e447-28d8-4724-8f03-9389b071a92a" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>If you are doing any module development, you'll want to become familiar with the backend API. Everything that the core of SonicJs uses is exposed in the API. The Backend API is organized into a collection of services. Although there are roughly 2 dozen services, you will typically only need to be familiar with a few of them for most module development scenarios.&nbsp;</p><p>Let's start by reviewing a list of each service and what it does.</p>
+</div><div class="module" style data-id="68319deb-3bb9-4a28-8e5f-0decb1a5bdc6" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-left ">Service List
+<a class="anchor" id="service-list"></a>
+</>
+</div><div class="module" style data-id="9ddf06b0-ebfd-4bd1-b270-5aa37f075874" data-module="API-SERVICE" data-content-type="api-service" data-template-region="true" data-template-page="true"><div class="api-service-wrapper">
+<h3>adminService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/admin.service.js</div>
+<p>Admin Service -
+The admin service is responsible for rendering the admin UI page.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>assetService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/asset.service.js</div>
+<p>Asset Service -
+The asset service is responsible for processing the css and js files used by the site.
+It is responsible for minimizing assets for production. The assets that are loaded for the site
+are combined from various sources: 1) your themes assets.yml file. 2) Assets from the enabled modules
+3) CSS for sections managed in the page builder</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>authService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/auth.service.js</div>
+<p>Auth Service -
+The auth service is responsible for registering and logging in users</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>backupRestoreService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/backup-restore.service.js</div>
+<p>Backup-Restore Service -
+The backup-restore service is responsible for restoring data from SonicJs' json based data backup system</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>backupService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/backup.service.js</div>
+<p>Backup Service -
+The backup service is responsible for backing up all database data into json files (one for each db record) and then zipping them up.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>breadcrumbsService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/breadcrumbs.service.js</div>
+<p>Breadcrumb Service -
+The breadcrumb service is responsible for generating site breadcrumbs</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>cacheService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/cache.service.js</div>
+<p>Cache Service -
+The cache service uses NodeCache. It allows data and content, such as rendered pages to be cached, thus dramatically improving performance.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>contentService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/content.service.js</div>
+<p>Content Service -
+The content service is respoinsible for the actual rendering of pages. This is the service that processes secions, rows, column and triggers the modeuls
+in each column to be rendered.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>cryptoService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/crypto.service.js</div>
+<p>Crypto Service -
+The crypto service exposes the encrypt and decrypt methods, primarily for safely storing user password</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>cssService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/css.service.js</div>
+<p>CSS Service -
+The css service processes the template file and support front end css updates from the page builder. It also manages merging in section styles into the main template.css file</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>dalService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/dal.service.js</div>
+<p>DAL Service -
+The DAL service is the data access layer of SonicJs. You will typically use the dataServie as it take the user session and the user's role into account.
+However, there are a few instances where you may need to access the DAL directly such as scheduled jobs. Alsway attempt to use the dataSerivce first and use the dalService only as a last resort.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>dataService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/data.service.js</div>
+<p>Data Service -
+The data service is the primary service used for access SonicJs' persistence layer. It generates the graphql queries that
+are executes on SonicJs' api layer. It passes along any necessary session data along with the data related paramwters.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>emailService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/email.service.js</div>
+<p>Email Service -
+The email service is responsible for sending transactional emails. It currently uses sendgrid but can easily be expanded
+to include other email providers.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>emitterService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/emitter.service.js</div>
+<p>Emitter Service -
+The emitter service is the foundation of SonicJs' hook system. It uses the event-emitter design pattern to manage the hooks that can
+be utilized in other services and modules.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>fileService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/file.service.js</div>
+<p>File Service -
+The service is responsible for filesystem IO operations.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>formService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/form.service.js</div>
+<p>Form Service -
+The form service is responsible for generating the data entry forms that are used both on the front end and back end aministratice sections.
+SonicJs uses form.io, an open source form generator.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>formattingervice</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/formatting.service.js</div>
+<p>Formatting Service -
+The formatting serivce is responsible for simple formatting needs of the system. IE date formats, title formating, etc</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>globalService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/global.service.js</div>
+<p>Global Service -
+The global service is responsible for managing global variables used throughout SonicJs.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>helperService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/helper.service.js</div>
+<p>Helper Service -
+The heloper service is a set of utiliites used throught SonicJs. IE: slugify, validateEmail, generateRandomString, etc</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>installService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/install.service.js</div>
+<p>Install Service -
+The install service is run when SonicJs first starts up. It is responsible for making sure the your database contains certain must-have records.
+It also contain so migration examples.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>mediaService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/media.service.js</div>
+<p>Media Service -
+The media service is respoinsible managing site assets such as images and videos. It can manage assets on the file system or Amazon S3.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>menuService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/menu.service.js</div>
+<p>Menu Service -
+The menu service is respoinsible for managing site menus. It processes menu hierachys, for example it can determine if the 1st level menu item should
+be set to active if a child item is presently being viewed by the user.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>migrationService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/migration.service.js</div>
+<p>Migration Service -
+The migration service is respoinsible for managing data migrations. SonicJs rarely needs to run site migration from one version to another due
+to its simple data model.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>moduleService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/module.service.js</div>
+<p>Module Service -
+The module service is resposible for managing the SonicJs' module system. It is one of the more complex services in SonicJs. It process the modules
+at system startup and provides all necessary function of each module throught it's life cycle.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>pageBuilderService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/page-builder.service.js</div>
+<p>Page Builder Service -
+The page builider service is resposible for all back end aspects of the front end page builder.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>s3Service</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/s3.service.js</div>
+<p>S3 Service -
+The S3 service is used to manage asset's on Amazon's S3 service.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>sharedService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/shared.service.js</div>
+<p>Shared Service -
+The shared service is resposible for a few helper sytle functions.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>siteSettingsService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/site-settings.service.js</div>
+<p>Site Settings Service -
+The site settings service adds the site settings data object to each request for use in downstream processes.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>testService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/test.service.js</div>
+<p>Test Service -
+The test service is contains utilities that accomadate Cypress end to end testing</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>themeService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/theme-settings.service.js</div>
+<p>Theme Service -
+The theme service is adds runtime data for use in theme rendering. IE it provides the current year for use in the site footer.</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>urlService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/url.service.js</div>
+<p>Url Service -
+The url service manage the in-memory url table used for mapping routes to services</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>userService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/user.service.js</div>
+<p>User Service -
+The user service manages site users, including role checking</p>
+
+</div>
+<div class="api-service-wrapper">
+<h3>urlService</h3>
+<div class="alert alert-secondary" role="alert">
+[root]/server/services/view.service.js</div>
+<p>View Service -
+The view service processes views. This service provides integration with the Handlebars view engine.</p>
+
+</div>
+</div></div></div></div></div></section>
+</main>
+
+<footer class="text-center text-lg-start bg-dark text-light footer">
+
+
+
+<section class="copyright text-center p-4 mt-5">
+© 2023 SonicJs. All Rights Reserved
+</section>
+
+</footer>
+
+<script src="../../assets/js/combined-0.7.6.js" type="cf93b2acbe1e2abf00483647-text/javascript"></script><script src="../../page-builder/js/page-builder.js" type="cf93b2acbe1e2abf00483647-text/javascript"></script>
+<script type="cf93b2acbe1e2abf00483647-text/javascript">
+            AOS.init();
+        </script>
+<script type="cf93b2acbe1e2abf00483647-module" src="../../server/themes/front-end/kevant/js/charts.js"></script>
+<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="cf93b2acbe1e2abf00483647-|49" defer></script></body>
+</html>

@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en" class=" docs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content>
+<meta name="generator" content="SonicJs">
+<meta name="version" content="0.7.6">
+<link rel="icon" href="../../assets/img/favicon.ico">
+<title>Data Model - Developer Guide | Kevant Technologies</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="icon" href="../../assets/img/favicon.ico">
+<style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Lato,
+            serif;
+        }
+
+        h1 {
+            font-family: Roboto,
+            serif;
+        }
+    </style>
+<link href="../../assets/css/combined-0.7.6.css" rel="stylesheet">
+<script type="8505116d697f6bb6bbff2e6e-text/javascript">
+          window.smartlook||(function(d) {
+            var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+            var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+            c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+            })(document);
+            smartlook('init', '27453f61154d21329a82640d24877fb96f5a8eec');
+        </script>
+</head>
+<body>
+<input type="hidden" id="page-id" name="page-id" value="dd1570b0-8e7a-48ac-907d-34f494d22e94">
+<input type="hidden" id="sessionID" value="erSLkhm7bre7bCBRHB5hAYrfiQF1V3h6" />
+<input type="hidden" id="theme" value="bootstrap5" />
+<main>
+<nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+<div class="container-fluid">
+<a class="navbar-brand" href="../../index.html">
+<div style class="mr-md-auto">
+<img src="https://sonicjscom.s3.us-west-1.amazonaws.com/sonicjs-logo.svg" alt width="120px" />
+</div>
+</a>
+<a class="btn btn-outline-light github" href="https://github.com/lane711/sonicjs" target="_blank"><i class="bi bi-github me-2"></i> Github</a>
+<a class="btn btn-outline-light demo" href="https://demo.sonicjs.com" target="_blank"><i class="bi bi-github me-2"></i> Demo</a>
+<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse text-end p-2" id="navbarsExample01">
+<ul class="navbar-nav me-auto mb-2">
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../docs.html">Docs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../nodejs-cms-comparison.html">Compare</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../contact.html">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="under-menu-spacer"></div>
+<style>
+.pb .css-8ecc8c31b06e{undefined}
+
+.pb .overlay-8ecc8c31b06e{undefined}
+</style><section data-id="1f57085f-aa8a-4c7f-bb21-8ecc8c31b06e" data-title="Section 1" class="jumbotron-fluid css-8ecc8c31b06e undefined undefined undefined position-relative"><div class="section-overlay overlay-8ecc8c31b06e undefined"><div class="container"><div class="row"><div class="col-md-3"><div class="module-template" style data-id="1e35bab3-b4bf-4a13-90df-6106d99a034f" data-module="TITLE" data-content-type="title" data-template-region="false" data-template-page="true"><h3 class="text-left mb-5 mt-0">SonicJs Docs
+<a class="anchor" id="sonicjs-docs"></a>
+</>
+</div><div class="module-template" style data-id="347a18dc-ff2e-414a-b145-67aba3b9b575" data-module="MENU-ACCORDION" data-content-type="menu-accordion" data-template-region="false" data-template-page="true">
+<nav id="accordian-menu" class="accordian-menu">
+<a href="../../docs.html" class="bold small text-uppercase mt-3 mb-1 level-1">Overview</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../../docs.html#special-sauce"><span>Special Sauce</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../../docs.html#getting-started"><span>Getting Started</span></a>
+
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#prerequisites"><span>Prerequisites</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#database-support"><span>Database Support</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#local-setup"><span>Local Setup</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#debugging"><span>Debugging</span></a>
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../features.html"><span>Features</span></a>
+
+
+</nav>
+<a href="../demo-videos.html" class="bold small text-uppercase mt-3 mb-1 level-1">Demo Videos</a>
+<a href="../user-guide.html" class="bold small text-uppercase mt-3 mb-1 level-1">User Guide</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide.html#quick-start"><span>Quick Start</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide/modules.html"><span>Modules</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide/themes.html"><span>Themes</span></a>
+
+
+</nav>
+<a href="../developers-guide.html" class="bold small text-uppercase mt-3 mb-1 level-1">Developer Guide</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../developers-guide.html#hooks"><span>Hooks</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../developers-guide/modules.html"><span>Modules</span></a>
+
+<a class="pl-0 nav-item nav-link level-3" href="../developers-guide/modules/listing.html"><span>Listing</span></a>
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="database-connection.html"><span>Datbase</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="data-model.html"><span>Data Model</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="api-backend.html"><span>API - Backend</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="api-front-end-graphql.html"><span>API - Frontend GraphQL</span></a>
+
+
+</nav>
+</nav></div></div><div class="col-md-9"><div class="module" style data-id="8e912e86-e93c-4432-be73-0e7af2974003" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h1 class="text-center mt-0">Data Model
+<a class="anchor" id="data-model"></a>
+</>
+</div><div class="module" style data-id="d892105b-0e5f-48ce-b4c1-df573b55b522" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>SonicJs has a simple yet flexible data model. We have a core data model with only a few base entities (which map to tables).&nbsp;</p><p>Each entity has a JSON based "data" property that can contain any data shape (aka "schema") desired by the site administrator. This enables site administrators to change their detailed data model (the part inside the JSON based "data" property) on the fly and instantly be able to create instances of this model with zero coding. This is possible because SonicJs' form builder is capable of generating create/edit forms on the fly for any data model defined as a content type within SonicJs.</p><p>The Data Model documentation is provided for anyone doing core development on the data access layer. In practice, you will rarely need to understand the underlying data model while building custom themes/modules.</p>
+</div><div class="module" style data-id="d1a34ef5-f3ff-48f1-ad34-9ae7319e78ea" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-center ">Schema Files
+<a class="anchor" id="schema-files"></a>
+</>
+</div><div class="module" style data-id="88033b11-7075-4a2e-aae6-ee9980516ac5" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>If you prefer reading code, here is the location of the schema files. As you can see, there are only 4 main entities used for the entire platform.</p>
+</div><div class="module" style data-id="bc72b599-d565-4bc7-ad38-24d7870fa72a" data-module="CODE-SNIPPET" data-content-type="code-snippet" data-template-region="true" data-template-page="true"><pre class><code class="language-treeview">sonicjs/
+|-- server/
+|   |-- data/
+|   |   &#x60;-- entity/
+|   |     &#x60;-- ContentSchema.js
+|   |     &#x60;-- SessionSchema.js
+|   |     &#x60;-- TagSchema.js
+|   |     &#x60;-- UserSchema.js</code></pre></div><div class="module" style data-id="46d1d539-0992-447d-a5d2-eaae00488f7d" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-center ">Content Entity
+<a class="anchor" id="content-entity"></a>
+</>
+</div><div class="module" style data-id="6cdd2d6c-3d4e-41bb-a959-d96ad888ed6e" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>The content entity is the main entity used in SonicJs. For most projects, well over 90% of your site content with be an instance of the content entity.</p>
+</div><div class="module" style data-id="162209c2-cf61-4340-9a16-6d94a88017ca" data-module="TEXT" data-content-type="text" data-template-region="true" data-template-page="true"><div class="mt-5"><div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th scope="col">Field</th>
+<th scope="col">Type</th>
+<th scope="col">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Id</th>
+<td data-title="Type">int / primary key</td>
+<td data-title="Description">The Id for the entity. The Id auto increments from 1.</td>
+</tr>
+<tr>
+<th scope="row">data</th>
+<td data-title="Type">text</td>
+<td data-title="Description">This field is used to store stringified JSON data. It is highly dynamic and contain any shape of data (properties, arrays). The "schema" for this data is defined in content types which are managed with a drag and drop content type manager.</td>
+</tr>
+<tr>
+<th scope="row">contentTypeId</th>
+<td data-title="Type">varchar</td>
+<td data-title="Description">This is the type of content or "schema" that the above data field contains. Examples: "blog", "menu", "role"</td>
+</tr>
+<tr>
+<th scope="row">createdByUserId</th>
+<td data-title="Type">int</td>
+<td data-title="Description">The user Id that originally created the content.</td>
+</tr>
+<tr>
+<th scope="row">lastUpdatedByUserId</th>
+<td data-title="Type">int</td>
+<td data-title="Description">The user Id that most recently updated the content.</td>
+</tr>
+<tr>
+<th scope="row">createdOn</th>
+<td data-title="Type">datetime</td>
+<td data-title="Description">Timestamp from when the content was first created.</td>
+</tr>
+<tr>
+<th scope="row">updatedOn</th>
+<td data-title="Type">datetime</td>
+<td data-title="Description">Timestamp from when the content was most recently updated.</td>
+</tr>
+<tr>
+<th scope="row">url</th>
+<td data-title="Type">varchar / unique:true</td>
+<td data-title="Description">Every content has a unique url. The provides and an easy lookup when rendering site pages.</td>
+</tr>
+<tr>
+<th scope="row">tags</th>
+<td data-title="Type">relationship: many-to-many</td>
+<td data-title="Description">Tags that are related to the content. Content can have many tags. Tags can have many content.</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div><div class="module" style data-id="824d64ec-4fd1-4e46-a1da-b66e89e0fb6b" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-center ">User Entity
+<a class="anchor" id="user-entity"></a>
+</>
+</div><div class="module" style data-id="42e17c11-f571-412e-a124-4bc2c51c9e7d" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>The user entity contains email, password and various profile properties for authenticated site/app users. Similar to the content entities data property, the user entities profile property is a dynamic field that can hold any data (properties and arrays) as specified by the site administrator using the drag and drop content type editor.&nbsp;</p>
+</div><div class="module" style data-id="1baf27a9-f0ad-48ce-8d1b-d245c23e91bc" data-module="TEXT" data-content-type="text" data-template-region="true" data-template-page="true"><div class="mt-5"><div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th scope="col">Field</th>
+<th scope="col">Type</th>
+<th scope="col">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Id</th>
+<td data-title="Type">int / primary key</td>
+<td data-title="Description">The Id for the user. The Id auto increments from 1.</td>
+</tr>
+<tr>
+<th scope="row">username</th>
+<td data-title="Type">varchar / unique:true</td>
+<td data-title="Description">The username (or more commonly used email address) used to login/authenticate to the website/app.</td>
+</tr>
+<tr>
+<th scope="row">salt</th>
+<td data-title="Type">varchar</td>
+<td data-title="Description">The salt part of the password.</td>
+</tr>
+<tr>
+<th scope="row">hash</th>
+<td data-title="Type">varchar</td>
+<td data-title="Description">The hash part of the password.</td>
+</tr>
+<tr>
+<th scope="row">profile</th>
+<td data-title="Type">text</td>
+<td data-title="Description">This field is used to store stringified JSON profile data. It is highly dynamic and contain any shape of data (properties, arrays). The "schema" for this data is defined in the user content types which is managed with a drag and drop content type manager.</td>
+</tr>
+<tr>
+<th scope="row">createdOn</th>
+<td data-title="Type">datetime</td>
+<td data-title="Description">Timestamp from when the user was first created.</td>
+</tr>
+<tr>
+<th scope="row">updatedOn</th>
+<td data-title="Type">datetime</td>
+<td data-title="Description">Timestamp from when the user was most recently updated or more recently logged in.</td>
+</tr>
+<tr>
+<th scope="row">tags</th>
+<td data-title="Type">relationship: many-to-many</td>
+<td data-title="Description">Tags that are related to the user. Users can have many tags. Tags can have many users.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="module" style data-id="0b7c4fd7-733d-43f7-93a1-6144e5f8a423" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-center ">Session Entity
+<a class="anchor" id="session-entity"></a>
+</>
+</div><div class="module" style data-id="c2cb8f6c-22f8-4211-a4b7-928ab5a67ccc" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>User sessions are stored in the data to enable SonicJs to be installed across multiple server nodes in production.&nbsp;</p>
+</div><div class="module" style data-id="3eccbdce-18b6-483c-9e14-74cd92eda015" data-module="TEXT" data-content-type="text" data-template-region="true" data-template-page="true"><div class="mt-5"><div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th scope="col">Field</th>
+<th scope="col">Type</th>
+<th scope="col">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Id</th>
+<td data-title="Type">varchar / primary key</td>
+<td data-title="Description">The unique Id for the session. Example: CBQOjsxWrABMwgDqi63ImJsF6UIEfrCN</td>
+</tr>
+<tr>
+<th scope="row">expiredAt</th>
+<td data-title="Type">bigint</td>
+<td data-title="Description">The session expiration key. Example: 1627677181513</td>
+</tr>
+<tr>
+<th scope="row">json</th>
+<td data-title="Type">text</td>
+<td data-title="Description">The content of the session. Example: {"cookie":{"originalMaxAge":null,"expires":null,"secure":false,"httpOnly":true,"path":"/"}}</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div><div class="module" style data-id="ab902bd3-9f25-4930-ba68-0be59aa6e93d" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-center ">Tag Entity
+<a class="anchor" id="tag-entity"></a>
+</>
+</div><div class="module" style data-id="650da9f8-e977-467f-84db-0f43130fa65b" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>Tags allow for content and users to be categorized. Tag are a many-to-many relationship for both users and content.</p>
+</div><div class="module" style data-id="e5df35b1-f148-44f2-b5ff-a54fe2fdf061" data-module="TEXT" data-content-type="text" data-template-region="true" data-template-page="true"><div class="mt-5"><div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th scope="col">Field</th>
+<th scope="col">Type</th>
+<th scope="col">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Id</th>
+<td data-title="Type">int / primary key</td>
+<td data-title="Description">The unique Id for the tag.</td>
+</tr>
+<tr>
+<th scope="row">name</th>
+<td data-title="Type">varchar</td>
+<td data-title="Description">The name or title of the tag. Examples: "NodeJs CMS", "Headless CMS"</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div></div></div></div></div></section>
+</main>
+
+<footer class="text-center text-lg-start bg-dark text-light footer">
+
+
+
+<section class="copyright text-center p-4 mt-5">
+© 2023 SonicJs. All Rights Reserved
+</section>
+
+</footer>
+
+<script src="../../assets/js/combined-0.7.6.js" type="8505116d697f6bb6bbff2e6e-text/javascript"></script><script src="../../page-builder/js/page-builder.js" type="8505116d697f6bb6bbff2e6e-text/javascript"></script>
+<script type="8505116d697f6bb6bbff2e6e-text/javascript">
+            AOS.init();
+        </script>
+<script type="8505116d697f6bb6bbff2e6e-module" src="../../server/themes/front-end/kevant/js/charts.js"></script>
+<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8505116d697f6bb6bbff2e6e-|49" defer></script></body>
+</html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" class=" docs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content>
+<meta name="generator" content="SonicJs">
+<meta name="version" content="0.7.6">
+<link rel="icon" href="../../assets/img/favicon.ico">
+<title>Database Connection - Developers Guide | Kevant Technologies</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="icon" href="../../assets/img/favicon.ico">
+<style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Lato,
+            serif;
+        }
+
+        h1 {
+            font-family: Roboto,
+            serif;
+        }
+    </style>
+<link href="../../assets/css/combined-0.7.6.css" rel="stylesheet">
+<script type="ff837e063338ec8822e3a774-text/javascript">
+          window.smartlook||(function(d) {
+            var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+            var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+            c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+            })(document);
+            smartlook('init', '27453f61154d21329a82640d24877fb96f5a8eec');
+        </script>
+</head>
+<body>
+<input type="hidden" id="page-id" name="page-id" value="b795bcfb-1f04-44ea-8af8-33b00a3f50b9">
+<input type="hidden" id="sessionID" value="erSLkhm7bre7bCBRHB5hAYrfiQF1V3h6" />
+<input type="hidden" id="theme" value="bootstrap5" />
+<main>
+<nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+<div class="container-fluid">
+<a class="navbar-brand" href="../../index.html">
+<div style class="mr-md-auto">
+<img src="https://sonicjscom.s3.us-west-1.amazonaws.com/sonicjs-logo.svg" alt width="120px" />
+</div>
+</a>
+<a class="btn btn-outline-light github" href="https://github.com/lane711/sonicjs" target="_blank"><i class="bi bi-github me-2"></i> Github</a>
+<a class="btn btn-outline-light demo" href="https://demo.sonicjs.com" target="_blank"><i class="bi bi-github me-2"></i> Demo</a>
+<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse text-end p-2" id="navbarsExample01">
+<ul class="navbar-nav me-auto mb-2">
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../docs.html">Docs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../nodejs-cms-comparison.html">Compare</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " aria-current="page" href="../../contact.html">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="under-menu-spacer"></div>
+<style>
+.pb .css-8ecc8c31b06e{undefined}
+
+.pb .overlay-8ecc8c31b06e{undefined}
+</style><section data-id="1f57085f-aa8a-4c7f-bb21-8ecc8c31b06e" data-title="Section 1" class="jumbotron-fluid css-8ecc8c31b06e undefined undefined undefined position-relative"><div class="section-overlay overlay-8ecc8c31b06e undefined"><div class="container"><div class="row"><div class="col-md-3"><div class="module-template" style data-id="1e35bab3-b4bf-4a13-90df-6106d99a034f" data-module="TITLE" data-content-type="title" data-template-region="false" data-template-page="true"><h3 class="text-left mb-5 mt-0">SonicJs Docs
+<a class="anchor" id="sonicjs-docs"></a>
+</>
+</div><div class="module-template" style data-id="347a18dc-ff2e-414a-b145-67aba3b9b575" data-module="MENU-ACCORDION" data-content-type="menu-accordion" data-template-region="false" data-template-page="true">
+<nav id="accordian-menu" class="accordian-menu">
+<a href="../../docs.html" class="bold small text-uppercase mt-3 mb-1 level-1">Overview</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../../docs.html#special-sauce"><span>Special Sauce</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../../docs.html#getting-started"><span>Getting Started</span></a>
+
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#prerequisites"><span>Prerequisites</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#database-support"><span>Database Support</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#local-setup"><span>Local Setup</span></a>
+<a class="pl-0 nav-item nav-link level-3" href="../../docs.html#debugging"><span>Debugging</span></a>
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../features.html"><span>Features</span></a>
+
+
+</nav>
+<a href="../demo-videos.html" class="bold small text-uppercase mt-3 mb-1 level-1">Demo Videos</a>
+<a href="../user-guide.html" class="bold small text-uppercase mt-3 mb-1 level-1">User Guide</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide.html#quick-start"><span>Quick Start</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide/modules.html"><span>Modules</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../user-guide/themes.html"><span>Themes</span></a>
+
+
+</nav>
+<a href="../developers-guide.html" class="bold small text-uppercase mt-3 mb-1 level-1">Developer Guide</a>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../developers-guide.html#hooks"><span>Hooks</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="../developers-guide/modules.html"><span>Modules</span></a>
+
+<a class="pl-0 nav-item nav-link level-3" href="../developers-guide/modules/listing.html"><span>Listing</span></a>
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="database-connection.html"><span>Datbase</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="data-model.html"><span>Data Model</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="api-backend.html"><span>API - Backend</span></a>
+
+
+</nav>
+<nav class="nav flex-column font-sm">
+<a class="pl-0 nav-item nav-link bold active level-2" href="api-front-end-graphql.html"><span>API - Frontend GraphQL</span></a>
+
+
+</nav>
+</nav></div></div><div class="col-md-9"><div class="module" style data-id="09e44126-b274-4b28-bd86-53fb8becb882" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h1 class="text-center mt-0">Database Support
+<a class="anchor" id="database-support"></a>
+</>
+</div><div class="module" style data-id="c809f1e3-4d15-49ce-bd77-cd512a8e2684" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>SonicJs uses TypeORM (<a href="https://typeorm.io">https://typeorm.io/</a>) for data access. By default, when you first install SonicJs, you will typically want to use the SQLite file based database.&nbsp;</p><p>The default SQLite database that you get after cloning master is the same database used for http://sonicjs.com and is therefore a good starter for learning how to use SonicJs to bring your big idea to life!</p><p>SQLite is even suitable for production in many cases and is the most widely used database in the world.&nbsp;</p><p>However, should you need to use another database, SonicJs supports the many databases below:</p><ul><li>MySQL</li><li>PostgreSQL</li><li>SQLite (local file based database)</li><li>MariaDB</li><li>Microsoft SQL Server</li><li>Oracle</li><li>WebSQL</li><li>MongoDB</li><li>CockroachDB</li><li>SAP Hana</li><li>sql.js</li><li>Others (Any Database Supported by TypeORM)</li></ul>
+</div><div class="module" style data-id="0da73302-c682-4747-92ac-780b2948c843" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-center ">Database Connection
+<a class="anchor" id="database-connection"></a>
+</>
+</div><div class="module" style data-id="9dfb70ff-da06-4fdb-9672-dc8bd708f652" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>The <strong>.env</strong> file at the root of the project is where you will configure your database connection. DO NOT MANUALLY CREATE THIS FILE. It is automatically generated the first time that you start up the application. Please see the samples below and check out the <a href="https://typeorm.io/#/connection">TypeORM connection docs</a> for full details.</p>
+</div><div class="module" style data-id="e9962c1e-bda5-4391-a9c3-6e0eeb16fca0" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h3 class="text-center ">SQLite (Default Database)
+<a class="anchor" id="sqlite-default-database"></a>
+</>
+</div><div class="module" style data-id="0096b8b1-9257-4da4-ba35-a872c4fb602b" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>Open the project environments file to set your database connection options:</p><p>[path to sonicjs]/.env:</p>
+</div><div class="module" style data-id="278be4ab-9fca-4d30-932e-11e5adb27283" data-module="CODE-SNIPPET" data-content-type="code-snippet" data-template-region="true" data-template-page="true"><pre class><code class="language-html"># The path your entity files, do not modify this
+TYPEORM_ENTITIES&#x3D;server/data/entity/*.js
+
+# The type of database that you want to connect to
+TYPEORM_CONNECTION&#x3D;sqlite
+
+# The path to your SQLite database file
+TYPEORM_DATABASE&#x3D;server/data/data.sqlite
+
+# Set synchronize to true so that your tables are created in your 
+# destination database if they do not exist
+TYPEORM_SYNCHRONIZE&#x3D;true
+
+# Set this to true if you are troubleshooting connection 
+# issues, other leave it off
+TYPEORM_LOGGING&#x3D;false
+</code></pre></div><div class="module" style data-id="665fed4a-ee29-44b4-946a-12cb8807c806" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h3 class="text-center ">MySQL
+<a class="anchor" id="mysql"></a>
+</>
+</div><div class="module" style data-id="f1bfac46-94f2-4da4-a3e9-9bb92a240579" data-module="CODE-SNIPPET" data-content-type="code-snippet" data-template-region="true" data-template-page="true"><pre class><code class="language-html">TYPEORM_CONNECTION &#x3D; mysql
+TYPEORM_HOST &#x3D; localhost
+TYPEORM_USERNAME &#x3D; root
+TYPEORM_PASSWORD &#x3D; admin
+TYPEORM_DATABASE &#x3D; test
+TYPEORM_PORT &#x3D; 3000
+TYPEORM_SYNCHRONIZE &#x3D; true
+TYPEORM_LOGGING &#x3D; true
+TYPEORM_ENTITIES &#x3D; server/data/entity/*.js</code></pre></div><div class="module" style data-id="34070a3f-887b-4b24-9c9d-4351f1d257d3" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h3 class="text-center ">Other Databases
+<a class="anchor" id="other-databases"></a>
+</>
+</div><div class="module" style data-id="62f3c251-7c96-44c7-8e64-354f967277ac" data-module="HTML" data-content-type="html" data-template-region="true" data-template-page="true"><p>To use a database that is different from the 2 examples above, please see the full list of environment variables below:</p><ul><li>TYPEORM_CACHE</li><li>TYPEORM_CACHE_ALWAYS_ENABLED</li><li>TYPEORM_CACHE_DURATION</li><li>TYPEORM_CACHE_OPTIONS</li><li>TYPEORM_CONNECTION</li><li>TYPEORM_DATABASE</li><li>TYPEORM_DEBUG</li><li>TYPEORM_DRIVER_EXTRA</li><li>TYPEORM_DROP_SCHEMA</li><li>TYPEORM_ENTITIES</li><li>TYPEORM_ENTITIES_DIR</li><li>TYPEORM_ENTITY_PREFIX</li><li>TYPEORM_HOST</li><li>TYPEORM_LOGGER</li><li>TYPEORM_LOGGING</li><li>TYPEORM_MAX_QUERY_EXECUTION_TIME</li><li>TYPEORM_MIGRATIONS</li><li>TYPEORM_MIGRATIONS_DIR</li><li>TYPEORM_MIGRATIONS_RUN</li><li>TYPEORM_MIGRATIONS_TABLE_NAME</li><li>TYPEORM_PASSWORD</li><li>TYPEORM_PORT</li><li>TYPEORM_SCHEMA</li><li>TYPEORM_SID</li><li>TYPEORM_SUBSCRIBERS</li><li>TYPEORM_SUBSCRIBERS_DIR</li><li>TYPEORM_SYNCHRONIZE</li><li>TYPEORM_URL</li><li>TYPEORM_USERNAME</li><li>TYPEORM_UUID_EXTENSION</li></ul><p>Please refer to the <a href="https://typeorm.io/#/using-ormconfig/using-ormconfigjs">TypeORM connection documentation</a> here for details.</p>
+</div><div class="module" style data-id="95c86780-fe04-4cca-b592-9449eca86008" data-module="TITLE" data-content-type="title" data-template-region="true" data-template-page="true"><h2 class="text-center ">Database FAQs
+<a class="anchor" id="database-faqs"></a>
+</>
+</div><div class="module" style data-id="faa44a72-e41a-4a94-a183-5e399a963f89" data-module="FAQ" data-content-type="faq" data-template-region="true" data-template-page="true"><div class="accordion accordion-clean" id="faqs-accordion">
+<div class="card mb-3">
+<div class="card-header">
+<a href="database-connection.html#" class="card-title btn collapsed" data-toggle="collapse" data-target="#v1-q1" aria-expanded="false"><i class="fas fa-angle-down angle"></i>Can I use a database that isn&#x27;t on the list above?
+</a>
+</div>
+<div id="v1-q1" class="collapse" data-parent="#faqs-accordion" style>
+<div class="card-body"><p>Its possible that you can. Google "typeorm some-database" and see if a connector has been built for the database that you want to use.</p></div>
+</div>
+</div>
+</div>
+</div></div></div></div></div></section>
+</main>
+
+<footer class="text-center text-lg-start bg-dark text-light footer">
+
+
+
+<section class="copyright text-center p-4 mt-5">
+© 2023 SonicJs. All Rights Reserved
+</section>
+
+</footer>
+
+<script src="../../assets/js/combined-0.7.6.js" type="ff837e063338ec8822e3a774-text/javascript"></script><script src="../../page-builder/js/page-builder.js" type="ff837e063338ec8822e3a774-text/javascript"></script>
+<script type="ff837e063338ec8822e3a774-text/javascript">
+            AOS.init();
+        </script>
+<script type="ff837e063338ec8822e3a774-module" src="../../server/themes/front-end/kevant/js/charts.js"></script>
+<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff837e063338ec8822e3a774-|49" defer></script></body>
+</html>
